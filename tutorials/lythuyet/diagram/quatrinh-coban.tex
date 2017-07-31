@@ -1,0 +1,37 @@
+\documentclass[12pt,border=12pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows, decorations.markings, calc, fadings, decorations.pathreplacing, patterns, decorations.pathmorphing, positioning}
+
+\begin{document}
+    \begin{tikzpicture}
+        \draw[ultra thick] (0, 1) -- (0, -3.5);
+                
+        \draw (0, 0) -- (1, 0);
+        \draw (1, 0.7) rectangle (5, -0.7);
+        \draw (3, 0) node[above]{$\text{Điều kiện bắt đầu}$};
+        \draw (3, 0) node[below]{$\text{(Khẳng định)}$};
+                
+        \draw (5, 0) -- (7, 0);
+        \draw (7, 0.7) rectangle (11, -0.7);
+        \draw (9, 0) node[above]{$\text{Điều kiện kết thúc}$};
+        \draw (9, 0) node[below]{$\text{(Phủ định)}$};
+                
+        \draw (0, -2.5) -- (2.5, -2.5) -- (2.5, -2);
+        \draw (2.9, -2) -- (2.9, -2.5) -- (6, -2.5) -- (6, 0);
+        \draw (2.7, -2) node[above]{\text{Tự giữ}};
+
+        \draw (11, 0) -- (12, 0);
+        \draw (12, 0) arc (180: 120: .5);
+        \draw (12, 0) arc (180: 240: .5);
+        \draw (13.5, 0) arc (0: 60: .5);
+        \draw (13.5, 0) arc (0: -60: .5);
+        \draw (12.75, 0) node{$\text{Ngõ ra}$};
+    \end{tikzpicture}
+\end{document}
